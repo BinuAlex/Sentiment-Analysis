@@ -46,10 +46,3 @@ new_df.to_csv('etsy_product_review.csv', index=False)
 print(new_df.sample(5))  
 
 
-"""import requests
-from bs4 import BeautifulSoup
-url = "https://www.etsy.com/in-en/listing/521076999/moon-phase-ear-climbers-ear-crawler-with?ga_order=most_relevant&ga_search_type=all&ga_view_type=gallery&ga_search_query=&ref=pagination&bes=1"
-response = requests.get(url).text
-soup = BeautifulSoup(response, 'lxml')
-[soup.select(f'#review-preview-toggle-{i}')[0].getText().strip() for i in range(4)]
-"""
